@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Conversion Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/sub-main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+       <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com"> 
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+       <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com"> 
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+       <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+
+    <body>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-up"></i></button>
+
+            <div class="container_conversion">
+                    
+
+                <div id="header">
+                    <h1 class="logo">Din Din Time</h1>
+                    <h3 class="h3-1">A FOOD RECIPE WEBSITE</h3>
+                </div>
+
+                
+
+                <input id="toggler" class="toggler" type="checkbox">
+                <label for="toggler" class="burger"><span><i class="fa fa-bars"></i></span></label> 
+
+                    <nav class="topnav">
+                            <hr class="header-line">
+                       <ul>
+                            
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="appetizers.html">Appetizers</a></li>
+                            <li><a href="sides.html">Sides</a></li>
+                            <li><a href="breakfast.html">Breakfast</a></li>
+                            <li><a href="lunch.html">Lunch</a></li>
+                            <li>
+                            <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Dinner
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                      <a href="#">Chicken</a>
+                                      <a href="#">Beef</a>
+                                      <a href="#">Pork</a>
+                                      <a href="#">Seafood</a>
+                                    </div>
+                                    </div></li>
+                            
+                            <li><a href="dessert.html">Dessert</a></li>
+                            <li><a href="recipe-index.html">Index</a></li>
+                            <li><a href="conversions.html" class="active">Conversion Calculator</a></li>
+                            
+                          
+                        </ul>
+                    </nav>
+
+                    <div id="sub-head">
+                        <h3><a href="index.html">HOME</a>&nbsp;<span class="arrow">&#187;</span>&nbsp;Conversion Calculator</h3>
+                        
+                    </div>
+<main class="conversions-main">
+
+   
+
+<div class="calculator_main">
+
+        <div id="title-c"> 
+            <h1 class="converter-title">Conversion Calculator</h1>
+        </div>
+
+        
+         <div id="sq-d">
+                    <input type="text" id="input"/>
+                
+            <select id="inputType">
+                    <option value="teaspoon">TSP</option>
+                    <option value="tablespoon">TBSP</option>
+                    <option value="cup">CUP</option>
+            </select>
+         </div>
+
+         <div id="sq-e">
+            <button onclick="change()" class="equals_button"><span>=</span></button>
+        </div>
+
+         <div id="sq-f">
+            <input type="text" readonly id="result"/>
+            <select id="resultType">
+                     <option value="teaspoon">TSP</option>
+                     <option value="tablespoon">TBSP</option>
+                     <option value="cup">CUP</option>
+            </select>
+        </div>
+          
+        <div  id="bottom"></div> 
+
+    </div>         
+   
+
+            
+</main>
+
+<div id="content1">
+        <img class="img-content1" src="images/background4.jpg" alt="spoons with spice">
+        <a href="#" class="button" style="vertical-align:middle"><span>Subscribe</span></a>
+    </div>
+           
+        
+    <div id="content2">
+        <img class="img-content2" src="images/background2.jpg" alt="spoons with spice">
+        <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+    </div>
+
+
+    <div id="content3">
+        <img class="img-content3" src="images/background1.jpg" alt="spoons with spice">
+        <a href="#" class="button" style="vertical-align:middle"><span>Contact Us</span></a>
+    </div>
+    <footer>&copy; 2021 Designed by Nathaniel Ayres</footer>
+  </div>
+            
+  </body>
+  <script src="js/recipe.js"></script>
+
+      </html>
